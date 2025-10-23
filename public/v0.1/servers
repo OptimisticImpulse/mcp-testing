@@ -1,0 +1,40 @@
+{
+  "version": "1.0.0",
+  "servers": [
+    {
+      "id": "vscode-api",
+      "name": "VS Code APIs and Services",
+      "publisher": "Microsoft",
+      "url": "mcp:/vscode-api",
+      "patterns": ["**/*"]
+    },
+    {
+      "id": "github-remote",
+      "name": "Remote GitHub",
+      "publisher": "GitHub",
+      "url": "mcp:/github-remote",
+      "patterns": ["**/*"]
+    },
+    {
+      "id": "playwright",
+      "name": "Playwright",
+      "publisher": "Microsoft",
+      "command": ["npx", "-y", "@playwright/mcp@latest"],
+      "patterns": ["**/*"]
+    },
+    {
+      "id": "azure",
+      "name": "Azure",
+      "publisher": "Azure",
+      "command": ["npx", "-y", "@azure/mcp@latest", "server", "start"],
+      "patterns": ["**/*"]
+    },
+    {
+      "id": "microsoft-learn",
+      "name": "Microsoft Learn",
+      "publisher": "MicrosoftDocs",
+      "url": "https://learn.microsoft.com/api/mcp",
+      "patterns": ["**/*"]
+    }
+  ]
+}
