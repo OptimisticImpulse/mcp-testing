@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0",
+  "servers": [
+    {
+      "id": "vscode-api",
+      "name": "VS Code APIs and Services",
+      "publisher": "Microsoft",
+      "url": "mcp:/vscode-api",
+      "patterns": ["**/*"]
+    }
+  ]
+}
